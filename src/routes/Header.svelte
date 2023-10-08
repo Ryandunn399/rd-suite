@@ -1,15 +1,64 @@
 <script lang="ts">
-    const title: string = "DUNN SUITE";
+    import { redirectLocal } from "../utilities/utilites";
 </script>
 
-<h1>{title}</h1>
+<div class="navbar">
+    <div class="nav-container empty-container"></div>
+    <div class="nav-container title">DUNN SUITE</div>
+    <div class="nav-container icon">
+        <button class="btn-login material-symbols-outlined md-2p5">account_circle</button>
+    </div>
+</div>
 
 <style>
+    @import 'material-symbols';
 
-    h1 {
-        font-family: var(--font-cubano);
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:99%;
+
+        -moz-box-sizing: border-box; 
+        -webkit-box-sizing: border-box; 
+        box-sizing: border-box; 
+    }
+
+    .title {
         font-size: 3rem;
+        font-family: var(--font-cubano);
         color: var(--active-color);
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 33%;
+        height: 100%;
+    }
+
+    .nav-container.icon {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        padding-right: 2rem;
+    }
+
+    .material-symbols-outlined.md-2p5 {
+        font-size: 2.5rem;
+    }
+
+    .btn-login {
+        padding: 0;
+        border: none;
+        background: none;
+    }
+
+    .btn-login:hover {
+        color: var(--active-color);
+        cursor: pointer;
     }
 
 </style>

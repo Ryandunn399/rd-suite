@@ -4,14 +4,7 @@
     import FVTT from '$lib/images/fvtt.png'
     import Settings from '$lib/images/settings.png'
 
-
-    const redirectLocal = (location: string) => () => {
-        window.location.href = "/" + location;
-    }
-
-    const redirectExternal = (location: string) => () => {
-        window.location.href = "https://" + location;
-    }
+    import { redirectExternal, redirectLocal } from '../utilities/utilites'
 
 </script>
 
