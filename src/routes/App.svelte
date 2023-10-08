@@ -16,21 +16,21 @@
 </script>
 
 <div class="row">
-    <button on:click={redirectExternal("github.com/ryandunn399")}>
+    <button class="btn-git" on:click={redirectExternal("github.com/ryandunn399")}>
         <img src={Github} alt="Github" class="logo git">
     </button>
 
-    <button>
+    <button class="btn-fvtt">
         <img src={FVTT} alt="Foundry" class="logo fvtt">
     </button>
 </div>
 
 <div class="row">
-    <button>
+    <button class="btn-dnd">
         <img src={DND} alt="Dungeons and Dragons" class="logo dnd">
     </button>
 
-    <button on:click={redirectLocal("configs")}>
+    <button class="btn-settings" on:click={redirectLocal("configs")}>
         <img src={Settings} alt="Settings" class="logo settings">
     </button>
 </div>
@@ -66,20 +66,34 @@
         cursor: pointer;
     }
 
-    .logo.git:hover {
-        filter: drop-shadow(0 0 2em black);
+    button.btn-git:hover {
+        
+        img {
+            filter: drop-shadow(0 0 2em black);
+        }
+
     }
 
-    .logo.dnd:hover {
-        filter: drop-shadow(0 0 2em #ff3e00aa);
+    button.btn-dnd:hover {
+        
+        img {
+            filter: drop-shadow(0 0 2em #ff3e00aa);
+        }
+
     }
 
-    .logo.fvtt:hover {
-        filter: drop-shadow(0 0 2em var(--active-color));
+    button.btn-fvtt:hover {
+        
+        img {
+            filter: drop-shadow(0 0 2em var(--active-color));
+        }
     }
 
-    .logo.settings:hover {
-        filter: drop-shadow(0 0 2em var(--active-color));
+    button.btn-settings:hover {
+        
+        img {
+            filter: drop-shadow(0 0 2em var(--active-color));
+        }
     }
 
 </style>
