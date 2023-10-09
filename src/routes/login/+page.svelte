@@ -1,14 +1,13 @@
 <script lang="ts">
-    import Homepage from "./Homepage.svelte";
-    import Header from "../components/Header.svelte";
+    import Header from "../../components/Header.svelte";
+    import Login from "./Login.svelte";
 </script>
-
 
 <div class="app">
     <Header />
 
-    <div class="home">
-        <Homepage />
+    <div class="account-wrapper">
+        <Login />   
     </div>
 </div>
 
@@ -22,7 +21,7 @@
         align-items: center;
     }
 
-    .home {
+    .account-wrapper {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -30,4 +29,5 @@
         height: 100%;
         width: 100%;
     }
+
 </style>
