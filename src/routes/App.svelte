@@ -47,7 +47,7 @@
         justify-content: center;
         background-color: var(--background-secondary);
         box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-        @include magic-border(4px, var(--active-color), 0.2s, 1);
+        transition: transform 330ms ease-in-out;
     }
 
     img {
@@ -55,8 +55,9 @@
         width: 75%;
     }
 
-    .button:hover {
+    button:hover {
         cursor: pointer;
+        transform: scale(1.1);
     }
 
     button.btn-git:hover {

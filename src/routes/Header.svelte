@@ -4,7 +4,7 @@
 
 <div class="navbar">
     <div class="nav-container empty-container"></div>
-    <div class="nav-container title">DUNN SUITE</div>
+    <div class="nav-container title">TOOL SUITE</div>
     <div class="nav-container icon">
         <button class="btn-login material-symbols-outlined md-2p5">account_circle</button>
     </div>
