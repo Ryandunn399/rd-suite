@@ -33,13 +33,12 @@
 
     .row {
         display: flex;
-        margin: 1rem;
         align-items: center;
         justify-content: center;
     }
 
     button {
-        margin: 0rem 1rem;
+        margin: 1rem;
         height: 12rem;
         width: 12rem;
         display: flex;

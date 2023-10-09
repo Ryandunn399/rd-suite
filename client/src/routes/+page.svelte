@@ -1,6 +1,6 @@
 <script lang="ts">
-    import App from "./App.svelte";
-    import Header from "./Header.svelte";
+    import Homepage from "./Homepage.svelte";
+    import Header from "../components/Header.svelte";
 </script>
 
 
@@ -8,7 +8,7 @@
     <Header />
 
     <div class="home">
-        <App />
+        <Homepage />
     </div>
 </div>
 
