@@ -1,17 +1,33 @@
 
 // Import the express in typescript file
 import express, { Express, Request, Response } from 'express';
- 
-// Initialize the express engine
+import cors from 'cors' 
+import bp from 'body-parser'
+import dotenv from 'dotenv'
+import { userRouter } from './routes/UserRoutes'
+
+dotenv.config();
+
+/**
+ * Initialize the express engine.
+ */
 const app: Express = express();
  
-// Take a port 3000 for running server.
-const port: number = 3000;
+/**
+ * Load port number
+ */
+const port = process.env.PORT;
  
-// Handling '/' Request
-app.get('/', (req: Request, res: Response) => {
-    res.send("TypeScript With Express");
-});
+/**
+ * Configure NPM packages
+ */
+app.use(cors({origin: '*'}))
+app.use(bp.json())
+
+/**
+ * Will handle the user routing.
+ */
+app.use('/users', userRouter);
  
 // Server setup
 app.listen(port, () => {
